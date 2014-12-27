@@ -297,7 +297,7 @@ div.cover > img {
 }
 .art-body-inner ul,
 .art-body-inner ol { /* For lists in the article body */
-  margin-bottom: 26px;
+  margin: 0 0 26px 25px;
 }
 .art-body-inner ul li {
   list-style: disc;

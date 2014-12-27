@@ -217,10 +217,6 @@ div.cover > img {
   height: 100%;
 }
 
-pre {
-  width: 100%;
-}
-
 
 /*  Article
 ================================================== */
@@ -571,7 +567,7 @@ padding: 1px 3px;
 }
 
 pre {
-  width: 90%;
+  width: 100%;
   overflow: auto;
   margin: 1rem 0;
   border: 2px solid #FFF6C5;

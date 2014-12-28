@@ -65,11 +65,20 @@
 
 {{! Menu }}
 {{#if post}}
-<nav class="nav fixed">
+<nav class="nav fixed navbar navbar-default" role="navigation">
 {{else}}
-<nav class="nav">
+<nav class="nav navbar navbar-default" role="navigation">
 {{/if}}
-    <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+    <li class="dropdown">
+      <a id="logo" class="dropdown-toggle" data-toggle="dropdown" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </li>
     <ul class="nav-primary">
         {{! TODO: Add URLs here }}
         <!-- <li><a href="{{@blog.url}}">Home</a></li> -->

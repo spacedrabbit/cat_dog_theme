@@ -451,6 +451,7 @@ div.cover > img {
 }
 .footer a:hover {
   color: #000;
+  text-decoration: none;
 }
 .back-to-top,
 .footer-nav,

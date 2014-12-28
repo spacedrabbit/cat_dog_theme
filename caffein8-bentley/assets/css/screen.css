@@ -418,6 +418,7 @@ div.cover > img {
 }
 .art-list-title a:hover {
   color: #F40034;
+  text-decoration: none;
 }
 .art-list-item p {
   width: 65%;

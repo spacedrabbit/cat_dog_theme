@@ -287,13 +287,13 @@ div.cover > img {
           box-shadow: 0 -3px 3px rgba(0,0,0,.2);
 }
 .art-body-inner {
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: "Cardo", Georgia,Cambria,"Times New Roman",Times,serif;
   max-width: 860px;
   padding: 80px 0 50px;
   letter-spacing: 0.01rem;
   font-weight: 400;
   font-style: normal;
-  font-size: 21px;
+  font-size: 23px;
   line-height: 1.5;
 }
 .art-body-inner a:hover {
@@ -317,7 +317,7 @@ div.cover > img {
 }
 
 .art-body-inner blockquote {
-  font-size: 16px;
+  font-size: 18px;
   background: #f9f9f9;
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
@@ -828,4 +828,9 @@ hr.featured-article:after {
     font-size: 1.2em;
     padding: 0 0.6em;
     background: white;
+}
+
+input {
+  padding: 0 7px;
+  line-height: 1.8;
 }

@@ -691,6 +691,7 @@ white-space: pre;
   .nav #logo h1 {
     font-size: 16px;
     letter-spacing: -1px;
+    line-height: 30px;
   }
   .nav li a {
     font-size: 12px;
@@ -740,6 +741,13 @@ white-space: pre;
   }
   .abt .abt-subheader {
     font-size: 18px;
+  }
+  .art-body-inner h5 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .art-body-inner p {
+    font-size: 20px;
   }
 }
 

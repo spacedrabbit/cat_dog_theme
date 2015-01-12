@@ -565,7 +565,6 @@ nav.pagination{
 
 /*  Code
 ================================================== */
-
 code, tt {
 /*background: #ededee;*/
 /*color: #3C4043;*/
@@ -582,6 +581,7 @@ pre {
   font: lighter .9rem/2rem monospace;
   box-shadow: 5px 5px 5px #888888;
   line-height: 1.25;
+  word-wrap: normal;
   white-space: pre;
 }
 
@@ -592,11 +592,21 @@ white-space: pre-wrap;
 background: transparent;*/
 border: none;
 /*padding: 0;*/
+white-space: pre;
 }
 
 
 .gist {
 	font-size: 14px;
+}
+
+
+code[class*="language-"], code, pre[class*="language-"] {
+    white-space: pre;
+}
+
+code[class*="language-"], code {
+    display: inline-block;
 }
 
 

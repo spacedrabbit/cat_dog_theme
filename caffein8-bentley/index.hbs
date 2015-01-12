@@ -33,4 +33,15 @@
         {{!-- <li><a href="https://www.linkedin.com/in/louistur/">LinkedIn</a></li> --}}
     </ul>
 </nav>
-{{> "loop"}}
+<div id="home">
+    <div class="posts">
+        <nav class="art-list">
+            <ul class="art-list-body">
+                {{> "loop"}}
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<footer class="footer">
+{{pagination}}

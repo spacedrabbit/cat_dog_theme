@@ -20,6 +20,7 @@
 <nav class="nav">
 {{/if}}
     <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+    <span id="author-name">by {{author}}</span>
     <ul class="nav-primary">
         {{#has author="Cassie Tarakajian"}}
             <li><a href="https://github.com/catarak">GitHub</a></li>
@@ -33,5 +34,25 @@
         {{/has}}
     </ul>
 </nav>
-{{> "loop"}}
+<div id="home">
+    <div class="posts">
+        <nav class="art-list">
+            <ul class="art-list-body">
+                <li class="art-list-item">
+                  <div>
+                    <img id="author-image" src="{{author.image}}">
+                  </div>
+                  <div class="author-bio">
+                    <h3>{{author.name}}</h3>
+                    <p>{{author.bio}}</p>
+                  </div>
+                  
+                </li>
+                {{> "loop"}}
+            </ul>
+        </nav>
+    </div>
+</div>
 
+<footer class="footer">
+{{pagination}}

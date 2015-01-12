@@ -405,6 +405,7 @@ div.cover > img {
   font-size: 26px;
   line-height: 26px;
   font-weight: 700;
+  padding-bottom: 5px;
 }
 .art-list-item-title-and-time {
   float: left;
@@ -421,7 +422,7 @@ div.cover > img {
 .art-list-title a {
   color: #000;
 }
-.art-list-title a:hover {
+.art-list-title a:hover, .art-list-author a:hover {
   color: #F40034;
   text-decoration: none;
 }
@@ -433,7 +434,17 @@ div.cover > img {
   font-size: 16px;
   line-height: 24px;
 }
-
+.art-list-author {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  /*color: #777;*/
+  color: #000;
+}
+.art-list-author a {
+  /*color: #777;*/
+  color: #000;
+}
 
 /*  Footer
 ================================================== */

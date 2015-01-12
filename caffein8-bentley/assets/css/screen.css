@@ -601,15 +601,6 @@ white-space: pre;
 }
 
 
-code[class*="language-"], code, pre[class*="language-"] {
-    white-space: pre;
-}
-
-code[class*="language-"], code {
-    display: inline-block;
-}
-
-
 /*  Responsive
 ================================================== */
 @media only screen and (max-width: 1080px) {

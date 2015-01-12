@@ -1,4 +1,41 @@
 {{!< default}}
+{{#if post}}
+{{#post}}
+<title>{{title}} | {{@blog.title}}</title>
+{{/post}}
+{{else}}
+<title>{{@blog.title}}</title>
+{{/if}}
+
+{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+<div class="wrapper">
+
+{{! Menu }}
+{{#if post}}
+<nav class="nav fixed">
+{{else}}
+<nav class="nav">
+{{/if}}
+    <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+    <ul class="nav-primary">
+        {{! TODO: Add URLs here }}
+        {{#post}}
+            {{#has author="Cassie Tarakajian"}}
+                <li><a href="https://github.com/catarak">GitHub</a></li>
+                <li><a href="http://people.flatironschool.com/profiles/cassie-tarakajian">FIS Profile</a></li>
+                <li><a href="https://twitter.com/hellothisiscass">Twitter</a></li>
+            {{/has}}
+            {{#has author="Louis Tur"}}
+                <li><a href="https://github.com/spacedrabbit">GitHub</a></li>
+                <li><a href="http://people.flatironschool.com/profiles/louis-tur">FIS Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/louistur/">LinkedIn</a></li>
+            {{/has}}
+        {{/post}}
+    </ul>
+</nav>
 {{#post}}
 
 <article class="art simple {{post_class}}">

@@ -1,25 +1,36 @@
 {{!< default}}
-<div id="home">
-    <div class="posts">
-        <nav class="art-list">
-          <ul class="art-list-body">
-            {{#foreach posts }}
-            <li class="art-list-item">
-                <div class="art-list-item-title-and-time">
-                    <h2 class="art-list-title"><a href="{{ @blog.url }}{{ url }}">{{ title }}</a></h2>
-                    <h3 class="art-list-author">by {{ author }}</h3>
-                    <div class="art-list-time">{{date published_at format="MMMM Do, YYYY"}}</div>
-                    {{#if featured}}
-                    <div class="art-list-time"><span style="color:#F40034;">&#10029;</span> Featured</div>
-                    {{else}}{{/if}}
-                </div>
-                <p>{{excerpt}} &hellip;</p>
-            </li>
-            {{/foreach}}
-          </ul>
-        </nav>
-    </div>
-</div>
+{{#if post}}
+{{#post}}
+<title>{{title}} | {{@blog.title}}</title>
+{{/post}}
+{{else}}
+<title>{{@blog.title}}</title>
+{{/if}}
 
-<footer class="footer">
-{{pagination}}
+{{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+<div class="wrapper">
+
+{{! Menu }}
+{{#if post}}
+<nav class="nav fixed">
+{{else}}
+<nav class="nav">
+{{/if}}
+    <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
+    <ul class="nav-primary">
+        {{! TODO: Add URLs here }}
+        <!-- <li><a href="{{@blog.url}}">Home</a></li> -->
+        <li><a href="{{@blog.url}}/author/cassie">Posts by Cassie</a></li>
+        <li><a href="{{@blog.url}}/author/louis">Posts by Louis</a></li>
+        {{#author}}
+            {{debug author.name}}
+        {{/author}}
+        {{!-- <li><a href="https://github.com/spacedrabbit">GitHub</a></li> --}}
+        {{!-- <li><a href="http://people.flatironschool.com/profiles/louis-tur">FIS Profile</a></li> --}}
+        {{!-- <li><a href="https://www.linkedin.com/in/louistur/">LinkedIn</a></li> --}}
+    </ul>
+</nav>
+{{> "loop"}}

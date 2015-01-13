@@ -20,18 +20,9 @@
 <nav class="nav">
 {{/if}}
     <a id="logo" href="{{@blog.url}}"><h1>{{@blog.title}}</h1></a>
-    <span id="author-name">by {{author}}</span>
     <ul class="nav-primary">
-        {{#has author="Cassie Tarakajian"}}
-            <li><a href="https://github.com/catarak">GitHub</a></li>
-            <li><a href="http://people.flatironschool.com/profiles/cassie-tarakajian">FIS Profile</a></li>
-            <li><a href="https://twitter.com/hellothisiscass">Twitter</a></li>
-        {{/has}}
-        {{#has author="Louis Tur"}}
-            <li><a href="https://github.com/spacedrabbit">GitHub</a></li>
-            <li><a href="http://people.flatironschool.com/profiles/louis-tur">FIS Profile</a></li>
-            <li><a href="https://www.linkedin.com/in/louistur/">LinkedIn</a></li>
-        {{/has}}
+        <li><a href="{{@blog.url}}/author/cassie">Cassie</a></li>
+        <li><a href="{{@blog.url}}/author/louis">Louis</a></li>
     </ul>
 </nav>
 <div id="home">
@@ -39,14 +30,21 @@
         <nav class="art-list">
             <ul class="art-list-body">
                 <li class="art-list-item">
-                  <div>
-                    <img id="author-image" src="{{author.image}}">
-                  </div>
                   <div class="author-bio">
+                    <img id="author-image" src="{{author.image}}">
                     <h3>{{author.name}}</h3>
                     <p>{{author.bio}}</p>
-                  </div>
-                  
+                    {{#has author="Cassie Tarakajian"}}
+                    <a class="fa fa-twitter social-icon" href="https://twitter.com/hellothisiscass"></a>
+                    <a class="fa fa-github social-icon" href="https://github.com/catarak"></a>
+                    <a class="fa fa-code social-icon" href="http://people.flatironschool.com/profiles/cassie-tarakajian"></a>
+                    {{/has}}
+                    {{#has author="Louis Tur"}}
+                    <a class="fa fa-linkedin-square social-icon" href="https://www.linkedin.com/in/louistur/"></a>
+                    <a class="fa fa-github social-icon" href="https://github.com/spacedrabbit"></a>
+                    <a class="fa fa-code social-icon" href="http://people.flatironschool.com/profiles/louis-tur"></a>
+                    {{/has}}
+                  </div>     
                 </li>
                 {{> "loop"}}
             </ul>

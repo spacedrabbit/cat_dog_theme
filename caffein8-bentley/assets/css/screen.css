@@ -663,11 +663,11 @@ white-space: pre;
 .author-card {
   padding: 20px;
   /*background: #EDEDED;*/
-  border-radius: 5px;
+  border-radius: 8px;
 }
 .author-card #author-image {
   float: left;
-  margin-right: 20px;
+  margin: 0 20px 50px 0;
   width: auto;
   height: 115px;
 }
@@ -862,6 +862,7 @@ white-space: pre;
   }
   .author-card #author-image {
     height: 80px;
+    margin-bottom: 0px;
   }
   /* author bio */
   .author-bio h3 {

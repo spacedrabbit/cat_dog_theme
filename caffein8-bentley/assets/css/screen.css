@@ -840,12 +840,27 @@ white-space: pre;
   .abt .abt-subheader {
     font-size: 18px;
   }
-  .art-body-inner h5 {
+  .art-body-inner h1,.art-body-inner h2,.art-body-inner h3,.art-body-inner h4,.art-body-inner h5 {
     font-size: 23px;
     text-align: center;
   }
   .art-body-inner p {
     font-size: 20px;
+  }
+  .author-card p {
+    display: none;
+  }
+  .author-card {
+    text-align: center;
+    height: 200px;
+  }
+  .author-card #read-more {
+    float: none;
+    margin-top: 30px;
+    display: block;
+  }
+  .author-card #author-image {
+    height: 80px;
   }
 }
 

@@ -847,6 +847,7 @@ white-space: pre;
   .art-body-inner p {
     font-size: 20px;
   }
+  /* author card */
   .author-card p {
     display: none;
   }
@@ -861,6 +862,11 @@ white-space: pre;
   }
   .author-card #author-image {
     height: 80px;
+  }
+  /* author bio */
+  .author-bio h3 {
+    font-size: 30px;
+    line-height: 32px;
   }
 }
 

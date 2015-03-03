@@ -604,6 +604,7 @@ pre {
   border: 2px solid #FFF6C5;
   border-radius:4px;
   font: lighter .9rem/2rem monospace;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   box-shadow: 5px 5px 5px #888888;
   line-height: 1.25;
   word-wrap: normal;

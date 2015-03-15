@@ -311,7 +311,7 @@ div.cover > img {
   line-height: 1.5;
 }
 .art-body-inner a:hover {
-  border-bottom: 1px solid #F40034;
+  /*border-bottom: 1px solid #F40034;*/
   padding-bottom:2px;
 }
 .art-body-inner ul,
